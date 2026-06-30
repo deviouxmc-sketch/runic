@@ -1,0 +1,130 @@
+name: RunicSMP
+version: '${project.version}'
+main: com.runicsmp.RunicSMP
+api-version: '1.21'
+description: Rune SMP Plugin
+authors: [ RunicSMP ]
+
+commands:
+  rune:
+    description: Rune commands
+    usage: /rune <info|track|reload|runename>
+  runeadmin:
+    description: Admin rune management
+    usage: /runeadmin <give|givesecondary|remove|set> <player> <rune>
+    permission: runicsmp.admin
+  recipes:
+    description: View all rune crafting recipes
+    usage: /recipes [rune]
+  ability:
+    description: Activate your equipped rune ability
+    usage: /ability [secondary]
+  withdraw:
+    description: Withdraw your equipped rune to inventory
+    usage: /withdraw <left|right|primary|secondary>
+  ritualtpto:
+    description: Teleport to an active ritual location
+    usage: /ritualtpto <player>
+  trust:
+    description: Trust a player to exempt them from rune effects
+    usage: /trust <player>
+  untrust:
+    description: Untrust a player
+    usage: /untrust <player>
+  trustlist:
+    description: List your trusted players
+    usage: /trustlist
+  endportal:
+    description: Enable or disable The End
+    usage: /end <disable|enable>
+    permission: runicsmp.admin
+  nether:
+    description: Enable or disable The Nether
+    usage: /nether <disable|enable>
+    permission: runicsmp.admin
+  pvp:
+    description: Toggle PvP on or off
+    usage: /pvp <on|off> [world]
+    permission: runicsmp.admin
+  spawn:
+    description: Teleport to or set world spawn
+    usage: /spawn [set|player]
+  freeze:
+    description: Freeze a player
+    usage: /freeze <player>
+    permission: runicsmp.admin
+  unfreeze:
+    description: Unfreeze a player
+    usage: /unfreeze <player>
+    permission: runicsmp.admin
+  smite:
+    description: Strike a player with lightning
+    usage: /smite <player>
+    permission: runicsmp.admin
+  gmc:
+    description: Set gamemode creative
+    usage: /gmc [player]
+    permission: runicsmp.admin
+  gms:
+    description: Set gamemode survival
+    usage: /gms [player]
+    permission: runicsmp.admin
+  gmsp:
+    description: Set gamemode spectator
+    usage: /gmsp [player]
+    permission: runicsmp.admin
+  gmadv:
+    description: Set gamemode adventure
+    usage: /gmadv [player]
+    permission: runicsmp.admin
+  clear:
+    description: Clear a player's inventory
+    usage: /clear [player]
+    permission: runicsmp.admin
+
+  runenotif:
+    description: Toggle rune ability chat messages on/off
+    usage: /runenotif
+  ritualmode:
+    description: Toggle ritual-only mode
+    usage: /ritualmode
+    permission: runicsmp.admin
+  leaderboard:
+    description: View kill leaderboard
+    usage: /leaderboard
+
+  setting:
+    description: Open RunicSMP settings GUI
+    usage: /setting
+  runicsmpsettings:
+    description: Open RunicSMP settings GUI
+    usage: /runicsmpsettings
+  broadcast:
+    description: OP broadcast
+    usage: /broadcast <message>
+  hunt:
+    description: Start or stop scavenger hunt
+    usage: /hunt <start|stop>
+  jugg:
+    description: Start or end a Juggernaut event
+    usage: /jugg <add|remove> [player]
+    permission: runicsmp.admin
+  altar:
+    description: Craft altar items for a player
+    usage: /altar <item> <player>
+    permission: runicsmp.admin
+  godchestplate:
+    description: Give a player the God Chestplate
+    usage: /godchestplate give <player>
+  godleggings:
+    description: Give a player the God Leggings
+    usage: /godleggings give <player>
+  godpickaxe:
+    description: Give a player the God Pickaxe
+    usage: /godpickaxe give <player>
+    permission: runicsmp.admin
+
+permissions:
+  runicsmp.admin:
+    description: Access to admin commands
+    default: op

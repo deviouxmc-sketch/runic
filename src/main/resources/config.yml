@@ -1,0 +1,80 @@
+# RunicSMP Configuration
+
+ritual:
+  duration-seconds: 900
+  location-broadcast-interval: 30
+
+energy:
+  regen-interval: 200
+
+wind-rune:
+  mace-damage-bonus: 8.0
+  mace-kb-reduction: 0.4
+  launch-velocity: 1.8
+  dash-power: 1.5
+  cooldown-seconds: 90
+
+strength-rune:
+  true-damage-duration-seconds: 10
+  base-damage: 0.5
+  cooldown-seconds: 90
+
+shadow-rune:
+  blind-radius: 15
+  blind-duration-ticks: 100
+  cooldown-seconds: 90
+
+lifesteal-rune:
+  hearts-per-kill: 2
+  drain-per-hit: 2
+  cooldown-seconds: 90
+
+lockdown-rune:
+  cooldown-seconds: 90
+
+fire-rune:
+  fireball-damage: 8.0
+  cooldown-seconds: 90
+  water-delete-radius: 3
+
+tidal-rune:
+  wave-radius: 10
+  cooldown-seconds: 90
+
+vitality-rune:
+  bonus-hearts: 10
+  cooldown-seconds: 90
+
+haste-rune:
+  active-haste-level: 255
+  active-duration-seconds: 10
+  passive-haste-level: 2
+  cooldown-seconds: 90
+
+defender-rune:
+  shield-duration-seconds: 5
+  cooldown-seconds: 90
+
+enchantment-rune:
+  active-sharpness-level: 5
+  active-duration-seconds: 15
+  cooldown-seconds: 90
+
+dragon-rune:
+  cooldown-seconds: 120
+
+clone-rune:
+  effect-copy-radius: 20
+  cooldown-seconds: 90
+
+tracker-rune:
+  glow-radius: 20
+  particle-line-distance: 10
+  cooldown-seconds: 90
+
+thief-rune:
+  steal-cooldown-seconds: 90
+
+trader-rune:
+  sword-enchant-sharpness: 4
+  cooldown-seconds: 90
